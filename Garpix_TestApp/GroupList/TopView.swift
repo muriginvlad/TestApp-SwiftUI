@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct TopView: View {
     
     var item: ItemData
@@ -24,20 +22,20 @@ struct TopView: View {
                     Text(item.country)
                         .font(.subheadline)
                    Spacer()
-                    Text(item.weight)
+                    Text("\(item.weight) кг.")
                         .font(.subheadline)
                         .lineLimit(1)
                 }
             }
             Spacer()
             VStack(spacing: 2.0) {
-                Text(item.discountPrice)
+                Text("\(item.discountPrice) р.")
                     .fontWeight(.bold)
-                Text(item.price)
+                Text("\(item.price) р.")
                     .font(.subheadline)
                     .fontWeight(.light)
                     .strikethrough()
-                Text(item.discount)
+                Text("\(item.discount)%")
                     .fontWeight(.bold)
                     .font(.subheadline)
                     .background(Color.yellow)
@@ -49,7 +47,6 @@ struct TopView: View {
                 Image(systemName: "plus.circle")
             }
         }
-       .padding()
     }
 }
 

@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		863425832546DE8900E3E7D7 /* ProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863425822546DE8900E3E7D7 /* ProductsList.swift */; };
+		8634258E25472DE000E3E7D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8634258D25472DE000E3E7D7 /* Assets.xcassets */; };
 		8638C9302542DED400E692A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8638C92F2542DED400E692A8 /* AppDelegate.swift */; };
 		8638C9322542DED400E692A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8638C9312542DED400E692A8 /* SceneDelegate.swift */; };
 		8638C9342542DED400E692A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8638C9332542DED400E692A8 /* ContentView.swift */; };
-		8638C9362542DEDB00E692A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8638C9352542DEDB00E692A8 /* Assets.xcassets */; };
 		8638C9392542DEDB00E692A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8638C9382542DEDB00E692A8 /* Preview Assets.xcassets */; };
 		8638C93C2542DEDB00E692A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8638C93A2542DEDB00E692A8 /* LaunchScreen.storyboard */; };
 		8638C9472542E5C100E692A8 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8638C9462542E5C100E692A8 /* ItemData.swift */; };
@@ -22,11 +22,11 @@
 
 /* Begin PBXFileReference section */
 		863425822546DE8900E3E7D7 /* ProductsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsList.swift; sourceTree = "<group>"; };
+		8634258D25472DE000E3E7D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8638C92C2542DED400E692A8 /* Garpix_TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Garpix_TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8638C92F2542DED400E692A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8638C9312542DED400E692A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8638C9332542DED400E692A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		8638C9352542DEDB00E692A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8638C9382542DEDB00E692A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8638C93B2542DEDB00E692A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8638C93D2542DEDB00E692A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,12 +66,12 @@
 		8638C92E2542DED400E692A8 /* Garpix_TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				8634258D25472DE000E3E7D7 /* Assets.xcassets */,
 				8638C92F2542DED400E692A8 /* AppDelegate.swift */,
 				8638C9312542DED400E692A8 /* SceneDelegate.swift */,
 				86D892CF25430BDD002331CA /* ItemList */,
 				8638C94A2542E6A500E692A8 /* GroupList */,
 				8638C9492542E68D00E692A8 /* Models */,
-				8638C9352542DEDB00E692A8 /* Assets.xcassets */,
 				8638C93A2542DEDB00E692A8 /* LaunchScreen.storyboard */,
 				8638C93D2542DEDB00E692A8 /* Info.plist */,
 				8638C9372542DEDB00E692A8 /* Preview Content */,
@@ -172,8 +172,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8638C93C2542DEDB00E692A8 /* LaunchScreen.storyboard in Resources */,
+				8634258E25472DE000E3E7D7 /* Assets.xcassets in Resources */,
 				8638C9392542DEDB00E692A8 /* Preview Assets.xcassets in Resources */,
-				8638C9362542DEDB00E692A8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../Garpix_TestApp/Media.xcassets">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/vladislav/Desktop/&#x41e;&#x431;&#x443;&#x447;&#x435;&#x43d;&#x438;&#x435;/GitHub/Garpix_TestApp/Garpix_TestApp/Assets.xcassets">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

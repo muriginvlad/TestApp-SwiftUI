@@ -11,38 +11,39 @@ struct ContentView: View {
     
     var body: some View {
         
-        TabView() {
-            Text("Тут будет главный экран")
+        TabView(){
+            Text("Главный экран")
                 .tabItem {
-                    Image(systemName: "flame")
+                    Image("flame")
                     Text("Главная")
                 }
                 .tag(1)
             ProductsList()
                 .tabItem {
-                    Image(systemName: "list.dash")
+                    Image("player_list")
                     Text("Продукты")
                 }
                 .tag(2)
-            Text("Тут будет информация о карте покупателя")
+            Text("Информация о карте покупателя")
                 .tabItem {
-                    Image(systemName: "creditcard")
+                    Image("creditcard")
                     Text("Карта")
                 }
                 .tag(3)
-            Text("Тут будет корзина с продуктами")
+            Text("Корзина с продуктами")
                 .tabItem {
-                    Image(systemName: "cart")
+                    Image("cart_active")
                     Text("Корзина")
                 }
                 .tag(4)
-            Text("Тут будет профиль покупателя")
+            Text("Профиль покупателя")
                 .tabItem {
-                    Image(systemName: "person.crop.circle")
+                    Image("user")
                     Text("Профиль")
                 }
                 .tag(5)
         }
+        .accentColor(.red)
     }
 }
 

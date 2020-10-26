@@ -27,29 +27,28 @@ struct ItemView: View {
                         HStack {
                             Text(item.country)
                                 .font(.subheadline)
-                            Text(item.weight)
+                            Text("\(item.weight) кг.")
                                 .font(.subheadline)
                                 .lineLimit(1)
                         }
                     }
-                    
                     Spacer()
                     VStack(spacing: 2.0) {
-                        Text(item.discountPrice)
+                        Text("\(item.discountPrice) р.")
                             .fontWeight(.bold)
-                        Text(item.price)
+                        Text("\(item.price) р.")
                             .font(.subheadline)
                             .fontWeight(.light)
                             .strikethrough()
-                        Text(item.discount)
+                        Text("\(item.discount)%")
                             .fontWeight(.bold)
                             .font(.subheadline)
                             .background(Color.yellow)
                             .cornerRadius(5)
                     }
-                    
                 }
-                .padding()
+                .padding(.horizontal, 15.0)
+                
                 Button("Добавить в список") {
                     print("Товар добавлен в список")
                 } .frame(width: UIScreen.main.bounds.width - 30, height: 60
@@ -57,22 +56,63 @@ struct ItemView: View {
                 .accentColor(.white)
                 .background(Color.red)
                 .cornerRadius(10)
-                .padding()
-                Text(item.description)
-                    .multilineTextAlignment(.leading)
-                    .lineLimit(nil)
-                    .padding()
+                .padding(.horizontal, 15.0)
+                
+                Text("Информация")
+                    .bold()
+                    .padding(.leading, 15.0)
+                
+                HStack {
+                    Text("Цена по карте")
+                        .foregroundColor(Color.gray)
+                    Spacer()
+                    Text("\(item.price) р.")
+                }
+                .padding(.horizontal, 15.0)
+                HStack {
+                    Text("Цена без карты")
+                        .foregroundColor(Color.gray)
+                    Spacer()
+                    Text("\(item.price) р.")
+                }
+                .padding(.horizontal, 15.0)
+                HStack {
+                    Text("Обычная цена")
+                        .foregroundColor(Color.gray)
+                    Spacer()
+                    Text("\(item.price) р.")
+                }
+                .padding(.horizontal, 15.0)
+                HStack {
+                    Text("Производитель")
+                        .foregroundColor(Color.gray)
+                    Spacer()
+                    Text("\(item.price) р.")
+                }
+                .padding(.horizontal, 15.0)
+                HStack {
+                    Text("Бренд")
+                        .foregroundColor(Color.gray)
+                    Spacer()
+                    Text("\(item.price) р.")
+                }
+                .padding(.horizontal, 15.0)
+                HStack {
+                    Text("Упаковка")
+                        .foregroundColor(Color.gray)
+                    Spacer()
+                    Text("\(item.price) р.")
+                }
+                .padding(.horizontal, 15.0)
             }
-            
         }
         .navigationBarItems(trailing:
-                                
                                 Button(action: {
                                     print("Корзина открыта")
                                 }) {
-                                    Image(systemName: "bag")
-                                }
-        )
+                                    Image("cart_red")
+                                        .accentColor(.red)
+                                })
     }
 }
 

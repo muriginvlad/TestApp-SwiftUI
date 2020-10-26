@@ -15,11 +15,11 @@ struct ItemData: Hashable, Codable, Identifiable {
     
     var name: String
     var fileImage: String
-    var price: String
-    var discount: String
-    var discountPrice: String
+    var price: Int
+    var discount: Int
+    var discountPrice: Int
     var description: String
-    var weight: String
+    var weight: Int
     var country: String
 }
 

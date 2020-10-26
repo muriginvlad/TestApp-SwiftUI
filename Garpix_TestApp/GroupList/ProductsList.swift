@@ -8,18 +8,26 @@
 import SwiftUI
 
 struct ProductsList: View {
+    
+    init(){
+        UITableView.appearance().backgroundColor = .clear
+    }
+    
     var body: some View {
         
         VStack {
             NavigationView {
                 
                 List(itemData){ item in
-                    
+                  
                     NavigationLink(destination: ItemView(item: item)) {
+                        EmptyView()
                         TopView(item: item)
                     }
-                }
                 
+                }
+                .listStyle(PlainListStyle())
+
                 .navigationBarTitle(Text("Продукты"))
                 .navigationBarItems(trailing:
                                         HStack {
@@ -27,15 +35,18 @@ struct ProductsList: View {
                                                 print("Нажата кнопки лупа")
                                             }) {
                                                 Image(systemName: "magnifyingglass")
+                                                    .accentColor(.red)
                                             }
                                             Button(action: {
                                                 print("Корзина открыта")
                                             }) {
-                                                Image(systemName: "bag")
+                                                Image("cart_red")
+                                                    .accentColor(.red)
                                             }
                                         })
             }
         }
+        
     }
 }
 
