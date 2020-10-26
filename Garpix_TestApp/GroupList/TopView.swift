@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 struct TopView: View {
     
     var item: ItemData
@@ -41,9 +43,11 @@ struct TopView: View {
                     .background(Color.yellow)
                     .cornerRadius(5)
             }
-            Button("+") {
-                print("Товар добавлен в корзину")
-            } 
+            Button(action: {
+                print("Нажата кнопки добавить")
+            }) {
+                Image(systemName: "plus.circle")
+            }
         }
        .padding()
     }
