@@ -57,6 +57,7 @@ struct ItemView: View {
                 .background(Color.red)
                 .cornerRadius(10)
                 .padding(.horizontal, 15.0)
+  
                 
                 Text("Информация")
                     .bold()
